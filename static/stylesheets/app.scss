@@ -1,0 +1,8 @@
+@import '../../node_modules/minireset.css/minireset.min.css';
+@import '../../node_modules/normalize.css/normalize.css';
+
+$success-green: #85ff85;
+
+body {
+	background: $success-green;
+}
