@@ -1,6 +1,29 @@
 require('../../stylesheets/comingsoon.scss');
 
 import React, { Component, PropTypes } from 'react';
+// import MailchimpForm from './MailchimpForm';
+import SubscribeForm from 'react-mailchimp-subscribe';
+
+const mailchimpFormProps = {
+  action: '//neuland21.us16.list-manage.com/subscribe/post?u=52cdca374a2d70783324ab813&amp;id=0b4a21ba13',
+  messages: {
+    inputPlaceholder: 'Email',
+    btnLabel: 'Abonnieren',
+    sending: 'Im Gange...',
+    success: 'Abonniert!',
+    error: 'Irgendwas ist falsch gelaufen...'
+  },
+  styles: {
+    success: {
+      color: 'green',
+    },
+    error: {
+      color: 'red',
+    }
+  }
+}
+
+const MailchimpForm = () => <SubscribeForm { ...mailchimpFormProps } />
 
 class ComingSoon extends Component {
   static propTypes = {
@@ -22,6 +45,8 @@ class ComingSoon extends Component {
           <br /><br />
           Und nicht vergessen: #ruralisthenewurban. 
         </div>
+
+        {<MailchimpForm />}
 
       </div>
     )

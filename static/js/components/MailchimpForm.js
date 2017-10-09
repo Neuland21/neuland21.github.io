@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import SubscribeFrom from 'react-mailchimp-subscribe';
+import SubscribeForm from 'react-mailchimp-subscribe';
 
 const formProps = {
   action: '//neuland21.us16.list-manage.com/subscribe/post?u=52cdca374a2d70783324ab813&amp;id=0b4a21ba13',
@@ -20,24 +20,4 @@ const formProps = {
   }
 }
 
-
-<!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup">
-<form action="//neuland21.us16.list-manage.com/subscribe/post?u=52cdca374a2d70783324ab813&amp;id=0b4a21ba13" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-  
-<div class="mc-field-group">
-  <label for="mce-EMAIL">Email Address </label>
-  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-  <div id="mce-responses" class="clear">
-    <div class="response" id="mce-error-response" style="display:none"></div>
-    <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_52cdca374a2d70783324ab813_0b4a21ba13" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
+export const MailchimpForm = () => <SubscribeForm {...formProps} />
