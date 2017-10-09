@@ -7,18 +7,20 @@ import SubscribeForm from 'react-mailchimp-subscribe';
 const mailchimpFormProps = {
   action: '//neuland21.us16.list-manage.com/subscribe/post?u=52cdca374a2d70783324ab813&amp;id=0b4a21ba13',
   messages: {
-    inputPlaceholder: 'Email',
-    btnLabel: 'Abonnieren',
+    inputPlaceholder: 'E-Mail',
+    btnLabel: 'Neuigkeiten erhalten',
     sending: 'Im Gange...',
-    success: 'Abonniert!',
+    success: 'Danke! Sie erhalten in Kürze eine Bestätigung per E-Mail.',
     error: 'Irgendwas ist falsch gelaufen.'
   },
   styles: {
     success: {
       color: 'green',
+      fontSize: 12,
     },
     error: {
       color: 'red',
+      fontSize: 12,
     }
   }
 }
@@ -44,8 +46,9 @@ class ComingSoon extends Component {
             <br /><br />
             Als gemeinnütziger Think & Do Tank nutzen wir etablierte Methoden der Startup- und Kreativbranche, um die immer drängender werdenden Probleme unserer Dörfer und Kleinstädte anzugehen. Wir entwickeln und pilotieren digitale und soziale Innovationen in den Bereichen Nahversorgung, Mobilität, Gesundheit, Arbeit und Kultur.
             <br /><br />
-            Und nicht vergessen: #ruralisthenewurban. 
+            Und nicht vergessen: #ruralisthenewurban.
           </div>
+          <br />
 
           { <MailchimpForm /> }
 
