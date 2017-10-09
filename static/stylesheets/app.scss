@@ -1,8 +1,10 @@
 @import '../../node_modules/minireset.css/minireset.min.css';
 @import '../../node_modules/normalize.css/normalize.css';
 
-$success-green: #85ff85;
 
 body {
-	background: $success-green;
+	background-image: url('../img/coming_soon_bg_landschaft.jpg') ;
+    // photo credit: https://unsplash.com/photos/YbgPWfWlvkE
+    background-size: 100%;
+    background-repeat: no-repeat;
 }

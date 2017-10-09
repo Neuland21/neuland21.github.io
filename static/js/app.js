@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore } from 'redux'
-import Template from './components/ComponentTemplate'
+import ComingSoon from './components/ComingSoonLanding'
 import counter from './reducers'
 
 require('../stylesheets/app.scss');
@@ -9,7 +9,7 @@ require('../stylesheets/app.scss');
 const rootEl = document.getElementById('root')
 
 const render = () => ReactDOM.render(
-  <Template />,
+  <ComingSoon />,
   rootEl
 )
 
