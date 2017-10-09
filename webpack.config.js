@@ -20,6 +20,17 @@ module.exports = {
           presets: ['es2016', 'es2015', 'react', 'stage-0']
         }
       },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
+      },
       { test: /\.json/, loader: 'json-loader'},
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.png$/, loader: 'url-loader?limit=100000' },
