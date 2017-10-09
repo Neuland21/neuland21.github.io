@@ -5,3 +5,43 @@
   height: 100vh;
   padding: 10% 25% 0 25%;
 }
+
+.coming-soon-header, .coming-soon-subheader {
+  font-family: 'Roboto Slab', serif;
+}
+
+.coming-soon-header {
+  font-size: 64px;
+}
+
+.coming-soon-subheader {
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+
+@mixin dark-overlay{
+  &:after{
+    content: "";
+    height: auto;
+    position: absolute;
+    z-index: -1;  
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background: url('../img/coming_soon_bg_landschaft.jpg');
+  background-size: 100%;
+  @include dark-overlay;
+}
+
+.overlay:after {
+  background: rgba(0, 0, 0, 0.5);
+}
+
