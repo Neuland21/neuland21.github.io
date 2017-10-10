@@ -46,8 +46,6 @@ class ComingSoon extends Component {
               Landflucht. Demographischer Wandel. Sterbende Dörfer. Die Herausforderungen für den ländlichen Raum sind nicht neu. Die politischen Lösungen allerdings auch nicht. Mit Neuland 21 holen wir das Landleben ins 21. Jahrhundert. 
               <br /><br />
               Als gemeinnütziger Think & Do Tank nutzen wir etablierte Methoden der Startup- und Kreativbranche, um die immer drängender werdenden Probleme unserer Dörfer und Kleinstädte anzugehen. Wir entwickeln und pilotieren digitale und soziale Innovationen in den Bereichen Nahversorgung, Mobilität, Gesundheit, Arbeit und Kultur.
-              <br /><br />
-              Und nicht vergessen: #ruralisthenewurban.
             </div>
             <br />
             <div className='email-form'>
