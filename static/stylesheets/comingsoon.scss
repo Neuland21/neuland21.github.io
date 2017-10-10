@@ -2,8 +2,12 @@
 .coming-soon-contents-container {
   text-align: center;
   width: 100%;
-  height: 100vh;
-  padding: 10% 25% 0 25%;
+  max-width: 700px;
+  flex: 0 0 auto; // grow | shrink rescaling relative to other children components in flex parent
+}
+
+.coming-soon-text {
+  padding: 32px;
 }
 
 .coming-soon-header, .coming-soon-subheader {
@@ -17,6 +21,19 @@
 .coming-soon-subheader {
   font-size: 24px;
   padding-bottom: 16px;
+}
+
+.email-form {
+  height: 16px;
+}
+.email-form button {
+  z-index: 1;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.email-form input {
+
 }
 
 @mixin dark-overlay{
@@ -37,7 +54,14 @@
   z-index: 1;
   text-align: center;
   background: url('../img/coming_soon_bg_landschaft.jpg');
-  background-size: 100%;
+  /*photo credit: https://unsplash.com/photos/YbgPWfWlvkE*/
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @include dark-overlay;
 }
 

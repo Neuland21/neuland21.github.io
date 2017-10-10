@@ -3,11 +3,9 @@
 
 
 body {
-	/*background-image: url('../img/coming_soon_bg_landschaft.jpg');*/
-    /*photo credit: https://unsplash.com/photos/YbgPWfWlvkE*/
-    background-size: 100%;
-    /*background-repeat: no-repeat;*/
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: white;
+    -webkit-font-smoothing: antialiased; // smooths font
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004) !important;
 }

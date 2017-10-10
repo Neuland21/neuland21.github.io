@@ -33,27 +33,31 @@ class ComingSoon extends Component {
 
   render() {
     return (
-      <article className='overlay'>
+      <div className='overlay'>
         <div className='coming-soon-contents-container'>
 
-          <div className='coming-soon-header'>Neuland 21</div>
-          <div className='coming-soon-subheader'>
-            Ein Think & Do Tank für das 
-            Landleben im 21. Jahrhundert
-          </div>
-          <div className='coming-soon-contents'>
-            Landflucht. Demographischer Wandel. Sterbende Dörfer. Die Herausforderungen für den ländlichen Raum sind nicht neu. Die politischen Lösungen allerdings auch nicht. Mit Neuland 21 holen wir das Landleben ins 21. Jahrhundert. 
-            <br /><br />
-            Als gemeinnütziger Think & Do Tank nutzen wir etablierte Methoden der Startup- und Kreativbranche, um die immer drängender werdenden Probleme unserer Dörfer und Kleinstädte anzugehen. Wir entwickeln und pilotieren digitale und soziale Innovationen in den Bereichen Nahversorgung, Mobilität, Gesundheit, Arbeit und Kultur.
-            <br /><br />
-            Und nicht vergessen: #ruralisthenewurban.
-          </div>
-          <br />
+          <div className='coming-soon-text'>
+            <div className='coming-soon-header'>Neuland 21</div>
+            <div className='coming-soon-subheader'>
+              Ein Think & Do Tank für das 
+              Landleben im 21. Jahrhundert
+            </div>
+            <div className='coming-soon-contents'>
+              Landflucht. Demographischer Wandel. Sterbende Dörfer. Die Herausforderungen für den ländlichen Raum sind nicht neu. Die politischen Lösungen allerdings auch nicht. Mit Neuland 21 holen wir das Landleben ins 21. Jahrhundert. 
+              <br /><br />
+              Als gemeinnütziger Think & Do Tank nutzen wir etablierte Methoden der Startup- und Kreativbranche, um die immer drängender werdenden Probleme unserer Dörfer und Kleinstädte anzugehen. Wir entwickeln und pilotieren digitale und soziale Innovationen in den Bereichen Nahversorgung, Mobilität, Gesundheit, Arbeit und Kultur.
+              <br /><br />
+              Und nicht vergessen: #ruralisthenewurban.
+            </div>
+            <br />
+            <div className='email-form'>
+              <MailchimpForm /> 
+            </div>
 
-          { <MailchimpForm /> }
+          </div>
 
         </div>
-      </article>
+      </div>
     )
   }
 }
