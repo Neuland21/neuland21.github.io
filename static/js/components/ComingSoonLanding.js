@@ -46,10 +46,18 @@ class ComingSoon extends Component {
               Landflucht. Demographischer Wandel. Sterbende Dörfer. Die Herausforderungen für den ländlichen Raum sind nicht neu. Die politischen Lösungen allerdings auch nicht. Mit Neuland 21 holen wir das Landleben ins 21. Jahrhundert. 
               <br /><br />
               Als gemeinnütziger Think & Do Tank nutzen wir etablierte Methoden der Startup- und Kreativbranche, um die immer drängender werdenden Probleme unserer Dörfer und Kleinstädte anzugehen. Wir entwickeln und pilotieren digitale und soziale Innovationen in den Bereichen Nahversorgung, Mobilität, Gesundheit, Arbeit und Kultur.
+              <br /><br />
+              Lass deine E-Mail Adresse da und wir benachrichtigen dich, sobald unsere Webseite fertig ist.
             </div>
             <br />
             <div className='email-form'>
               <MailchimpForm /> 
+            </div>
+            <br /><br />
+            <div className='footer-contents'>
+              hallo@neuland21.de
+              <br />
+              Friedrichstraße 180, 10117 Berlin
             </div>
 
           </div>

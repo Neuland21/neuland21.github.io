@@ -10,7 +10,7 @@
   padding: 32px;
 }
 
-.coming-soon-header, .coming-soon-subheader {
+.coming-soon-header, .coming-soon-subheader, .footer-contents {
   font-family: 'Roboto Slab', serif;
 }
 
@@ -25,15 +25,21 @@
 
 .email-form {
   height: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 .email-form button {
   z-index: 1;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
+  padding: 4px 8px;
 }
 
 .email-form input {
+  height: 19px; // off-grid to accommodate weird button formatting
+}
 
+.footer-contents {
+  font-size: 12px;
 }
 
 @mixin dark-overlay{
