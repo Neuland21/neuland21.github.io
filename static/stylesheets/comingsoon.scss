@@ -26,20 +26,41 @@
 .email-form {
   height: 16px;
   font-family: 'Open Sans', sans-serif;
+  display: inline-block;
 }
 .email-form button {
   z-index: 1;
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
-  padding: 4px 8px;
+  padding: 8px 12px;
+  outline: none;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: #ff5151;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: white;
+  height: 40px;
+  transition: 0.2s background ease;
+}
+
+.email-form button:hover {
+  cursor: pointer;
+  background: #c33c3c;
 }
 
 .email-form input {
-  height: 19px; // off-grid to accommodate weird button formatting
+  font-size: 14px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  height: 40px;
+  width: 360px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
 }
 
 .footer-contents {
   font-size: 12px;
+  margin: 16px;
 }
 
 @mixin dark-overlay{
@@ -72,6 +93,6 @@
 }
 
 .overlay:after {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.25);
 }
 

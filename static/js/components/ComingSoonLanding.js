@@ -15,11 +15,15 @@ const mailchimpFormProps = {
   },
   styles: {
     success: {
-      color: 'green',
+      color: 'white',
+      fontSize: 12,
+    },
+    sending: {
+      color: 'white',
       fontSize: 12,
     },
     error: {
-      color: 'red',
+      color: 'white',
       fontSize: 12,
     }
   }
