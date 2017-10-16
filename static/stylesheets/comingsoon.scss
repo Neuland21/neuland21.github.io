@@ -28,6 +28,18 @@
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
 }
+
+.email-form input {
+  font-size: 14px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  height: 40px;
+  width: 360px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
 .email-form button {
   z-index: 1;
   padding: 8px 12px;
@@ -45,17 +57,6 @@
 .email-form button:hover {
   cursor: pointer;
   background: #c33c3c;
-}
-
-.email-form input {
-  font-size: 14px;
-  padding: 8px 12px;
-  box-sizing: border-box;
-  height: 40px;
-  width: 360px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  outline: none;
 }
 
 .footer-contents {
@@ -94,5 +95,23 @@
 
 .overlay:after {
   background: rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 736px) {
+  .coming-soon-header {
+    font-size: 48px;
+  }
+  .email-form input {
+    border-radius: 0;
+    margin: 0 0 8px 0;
+    width: 240px;
+  }
+  .email-form button {
+    border-radius: 5px;
+  }
+  .overlay {
+    height: 100%;
+  }
+
 }
 
