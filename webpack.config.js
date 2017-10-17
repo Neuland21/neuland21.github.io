@@ -7,7 +7,7 @@ process.traceDeprecation = true;
 module.exports = {
   entry: __dirname + "/static/js/app.js",
   output: {
-    path: __dirname + '/static/build',
+    path: __dirname,
     filename: "bundle.js"
   },
   module: {
