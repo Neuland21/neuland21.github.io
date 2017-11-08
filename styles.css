@@ -58,7 +58,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  background: url(372a25adf6ab1a85184477d1b4156af8.jpg);
+  background: url(be8da824507dc13e0d7fd6260e82876a.jpg);
   /*photo credit: https://unsplash.com/photos/YbgPWfWlvkE*/
   background-size: cover;
   background-position: center;
@@ -78,7 +78,7 @@
     bottom: 0; }
 
 .overlay:after {
-  background: rgba(0, 0, 0, 0.25); }
+  background: rgba(0, 0, 0, 0.3); }
 
 @media screen and (max-width: 736px) {
   .coming-soon-header {
