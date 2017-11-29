@@ -61,7 +61,6 @@ class ComingSoon extends Component {
             <div className='footer-contents'>
               hallo@neuland21.de
               <br />
-              Friedrichstraße 180, 10117 Berlin
             </div>
 
           </div>

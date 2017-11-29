@@ -10701,8 +10701,7 @@ var ComingSoon = function (_Component) {
               'div',
               { className: 'footer-contents' },
               'hallo@neuland21.de',
-              _react2.default.createElement('br', null),
-              'Friedrichstra\xDFe 180, 10117 Berlin'
+              _react2.default.createElement('br', null)
             )
           )
         )
